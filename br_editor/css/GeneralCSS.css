@@ -334,9 +334,16 @@ th, td{
     -ms-user-select: none; /* Internet Explorer */
     -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
     -webkit-user-select: none; /* Chrome, Safari, and Opera */
-    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
-    cursor: pointer;
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/    
     text-align: center;  
+    /* cursor: pointer; */
+}
+
+td{  
+  border-bottom-style: solid;  
+  border-width: 1px;
+  border-color: rgb(73, 65, 56);
+  border-right: 1px solid rgb(39, 36, 35);
 }
 
 .td-btn{
@@ -376,32 +383,42 @@ th, td{
   
 .table{    
     color: var(--font-col-main);    
-    background-color:  var(--bg-col-dk);       
+    background-color:  var(--bg-col-dk);   
+    margin-bottom: 0px;   
 }
 
 thead{
-    border-top-style: solid;
-    border-color: var(--border-col);  
+    border: 0px solid var(--border-col);
     background-color:  var(--bg-col-hov-dk);
-    color: var(--font-col-sec);  
+    color: var(--font-col-sec);      
+    border-left: 1px solid var(--border-col);
+    border-right: 1px solid var(--border-col);
 }
 
-th{
-    border-style: solid; 
-    border-width: 1px;
-    border-color: rgb(73, 65, 56);
+ th:after{  
+  content:'';
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  border-bottom: 1px solid var(--border-col);
+} 
+
+th:before{
+  content:'';
+  position:absolute;
+  left: 0;
+  top: 0;
+  width:100%;
+  border-top: 1px solid var(--border-col);
 }
+
 
 tbody{  
     border: 2px solid rgb(73, 65, 56);
 }
 
-td{  
-    border-bottom-style: solid;  
-    border-width: 1px;
-    border-color: rgb(73, 65, 56);
-    border-right: 1px solid rgb(39, 36, 35);
-}
+
 
 .td-br:hover td{
     border-right: 1px solid rgb(54, 50, 49);
@@ -417,7 +434,7 @@ td{
 
 .table > thead > tr > th{
     vertical-align: bottom;
-    border: 2px solid rgb(73, 65, 56);  
+    border: 0px solid var(--border-col);  
 }
 
 .table > tbody > tr > td{
@@ -547,6 +564,10 @@ td{
 
 
 /*#endregion*/
+/*#region PRUEBAS!!*/
+
+/*#endregion*/
+
 /*#region Otros */
 .m8 {
   margin-top: 8px;
@@ -558,9 +579,18 @@ td{
   overflow-y: scroll;
   scrollbar-color: var(--bg-col-hov) var(--bg-col-dk);
   scrollbar-width: thin;
+  padding-right: 1px;
 }
 
-selector{
+.scroller thead{
+  position: sticky;
+  top: 0;      
+}
+
+th:hover{
   background-color: red;
 }
+
+
+
 /*#endregion */

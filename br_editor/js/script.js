@@ -354,6 +354,27 @@ const pNexo = "http://localhost:3000/";
             return bre.Animations[pId].name;
         }        
     }
+
+    function Decoder_EfectosDeUsables_ToString(pCode){
+        switch (pCode) {
+            case 11:    return "Recuperar PV"                
+            case 12:    return "Recuperar PM"                
+            case 13:    return "Ganar PT"               
+            case 21:    return "Añadir Estado"                 
+            case 22:    return "Remover Estado"
+            case 31:    return "Añadir Ventaja"
+            case 32:    return "Añadir Desventaja"
+            case 33:    return "Quitar Ventaja"
+            case 34:    return "Quitar Desventaja"
+            case 41:    return "Efecto Especial"
+            case 42:    return "Aumentar Estadistica"
+            case 43:    return "Aprender Habilidad"
+            case 44:    return "Evento Comun"
+            default:
+                console.log('Error en: Decoder_EfectosDeUsables_ToString('+pCode+')');
+                break;
+        }
+    }
 //#endregion
 //#region --------------------------- PRUEBAS!!! -------------------------------
     function Prueba(){

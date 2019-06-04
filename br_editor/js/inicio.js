@@ -15,7 +15,7 @@ window.onload = function(){
     //#region BD_Load       
     BD_Cargar_todo();
     
-    
+    //console.log(Decoder_EfectosDeUsables_ToString(22));
         
     //#endregion                                 
    
