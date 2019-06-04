@@ -1,0 +1,7 @@
+[
+null,
+{"id":1,"list":[{"code":223,"indent":0,"parameters":[[-68,-68,0,68],240,true]},{"code":0,"indent":0,"parameters":[]}],"name":"Hacer de noche","switchId":1,"trigger":0},
+{"id":2,"list":[{"code":223,"indent":0,"parameters":[[0,0,0,0],60,true]},{"code":0,"indent":0,"parameters":[]}],"name":"Hacer de dia","switchId":1,"trigger":0},
+{"id":3,"list":[{"code":355,"indent":0,"parameters":["console.log(\"ola q ase\");"]},{"code":0,"indent":0,"parameters":[]}],"name":"FPM = 1","switchId":1,"trigger":0},
+{"id":4,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0}
+]

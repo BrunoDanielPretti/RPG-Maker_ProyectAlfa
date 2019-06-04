@@ -1,0 +1,82 @@
+.panel-body .textarea-notas{ 
+    resize: none;
+    margin-top: 8px;
+    font-family: Monospace;
+    font-size: 16px;
+}
+
+.head-spam-for-id{
+    float: right;
+    font-size: 20px;
+    margin-top: -4px;
+}
+
+.br_panel_left{
+    position: absolute;
+    left: 5px;
+    top: 40px;
+    width: 250px;
+    height: 500px;
+    /* background-color: burlywood; */
+    color: white;
+}
+
+.Panel_SeleccionDeIcono{
+    padding: 20px;
+    padding-right: 0px;
+    /* overflow: hidden; */
+    width: 72.4%;
+    height: 750px;
+    border: solid #494138;    
+}
+.box_icono, .box_icono-NoHover, .background_selector{
+    border: 1px solid #494138;
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-right: 2px;
+    background-color: #272524;
+}
+.box_icono:hover{
+    border-color: rgba(189, 142, 68, 0.651);
+    /* background-color: #33302e; */
+    cursor: default;
+    filter: brightness(1.2);
+}
+.box_icono_selected{
+    border-color: rgba(189, 142, 68, 0.651);
+    background-color: rgba(189, 142, 68, 0.23);
+}
+.box_icono_selected:hover{
+    filter: brightness(1.2);
+    background-color: rgba(189, 142, 68, 0.23);
+}
+.pan_icon_a{
+    padding: 0px;
+    color: #bebebe;
+    border: 1px solid #494138;
+    background-color: #272524;
+    padding-left: 5px;
+}
+.pan_icon_a:hover{
+    color: #dbbf81;
+}
+.background_selector{
+    height: 29px;
+    width: 29px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    filter: opacity(0.5);
+}
+.background_selector:hover{
+    filter: opacity(1);
+    transform: scale(1.1);
+}
+
+li.disabled span{
+    text-decoration-line: line-through;
+}
+
+.text-precio{
+    font-size: 30px;
+    text-align: center;
+}

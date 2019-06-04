@@ -1,0 +1,75 @@
+ <nav class="navbar" style="margin-bottom: 8px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+             
+
+    </div>
+    <ul class="nav navbar-nav">
+
+      <li class="dropdown">
+        <span class="dropdown-toggle" data-toggle="dropdown" href="#">Archivo <span class="caret"></span></span>        
+        <ul class="dropdown-menu autodrop">
+            <li class="dropdown-submenu">
+                <span tabindex="-1" href="#">Consola <span class="glyphicon glyphicon-triangle-right"></span> </span>
+                <ul class="dropdown-menu autodrop" onmouseover="SubmenuOver(this)" onmouseout="SubmenuOut(this)">                    
+                    <li><span onclick="Mostrar_BD_Origin()">BD_Origin</span></li>
+                    <li><span onclick="Mostrar_MyBD()">MyBD</span></li>
+                    <li><span onclick="console.clear()">Limpiar</span></li>                    
+                    <li class="dropdown-submenu">
+                        <span tabindex="-1" href="#">Mostrar... <span class="glyphicon glyphicon-triangle-right"></span> </span>
+                        <ul class="dropdown-menu autodrop" onmouseover="SubmenuOver(this)" onmouseout="SubmenuOut(this)">
+                            <li><span onclick="console.log(bre.System)">System</span></li>
+                            <li><span onclick="console.log(bre.Items)">Items</span></li>
+                            <li><span onclick="console.log(bre.Animations)">Animaciones</span></li>                            
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li><span onclick="console.log(bre.System)">Mostrar System</span></li>
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                    <span tabindex="-1" href="#">Tablas <span class="glyphicon glyphicon-triangle-right"></span> </span>
+                    <ul class="dropdown-menu autodrop" onmouseover="SubmenuOver(this)" onmouseout="SubmenuOut(this)">                    
+                        <li><span onclick="TablaDinamica(bre.Items)">Items</span></li>                                          
+                        <li><span onclick="TablaDinamica(bre.Actores)">Actores</span></li>
+                        <li><span onclick="TablaDinamica(bre.Clases)">Clases</span></li>
+                    </ul>
+                </li>
+            
+         
+            <li onclick="Guardar_MyBD_Todas(this)"><span>Guardar Todo<span class="glyphicon glyphicon-floppy-disk"></span></span></li>
+            <li class="dropdown-submenu">
+                <span tabindex="-1" href="#">Guardar... <span class="glyphicon glyphicon-triangle-right"></span> </span>
+                <ul class="dropdown-menu autodrop" onmouseover="SubmenuOver(this)" onmouseout="SubmenuOut(this)">
+                    <li onclick="Items_Exportar_Todos(this)"><span>Items<span class="glyphicon glyphicon-floppy-disk"></span></span></li>                    
+                </ul>
+            </li>
+            
+            <li class="dropdown-submenu">
+                <span tabindex="-1" href="#">Reload BD...<span class="glyphicon glyphicon-triangle-right"></span> </span>
+                <ul class="dropdown-menu autodrop" onmouseover="SubmenuOver(this)" onmouseout="SubmenuOut(this)">
+                    <li onclick="BD_Eliminar_LocalStorage()"><span>Toda <span class="glyphicon glyphicon-import"></span></span></li> 
+                    <li class="disabled"><span>Items BD <span class="glyphicon glyphicon-import"></span></span></li>                    
+                </ul>
+               
+            </li>
+            <li><span onclick="window.location.reload()">Recargar<span class="glyphicon glyphicon-refresh"></span></span></li>
+            <li class="divider"></li>                         
+            <li class="disabled"><span>Opciones<span class=""></span></span></li>                        
+        </ul>
+      </li>  
+
+      <li><span onclick="window.location.reload()"><span class="glyphicon glyphicon-refresh"></span></span></li>
+      <li><span onclick="btnNav_Items()">Items</span></li>
+      <li><span onclick="btnNav_Actores()">Actores</span></li>
+      <li><span href="#">Span</span></li>
+      <li><span href="#">Span</span></li>
+
+      
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">                          
+        <li><span href="#" onclick="Mostrar_MyBD()" id="">Mostrar BD</span></li>
+    </ul>
+  </div>
+</nav> 

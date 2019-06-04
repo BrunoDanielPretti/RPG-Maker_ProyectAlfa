@@ -1,0 +1,43 @@
+<div>
+<div id="panel_left" class="col-xs-2 " style="padding-left: 0px; padding-right: 0px" >
+        <div id='panel_left_header' class='panel-body panel_border'>
+                
+                <div class="input-group col-xs-12 " >                        
+                        <span class="input-group-addon" onclick="$('#Buscar_txt').val('');"><i class="glyphicon glyphicon-search"></i></span>
+                        <input type="text" onkeyup="FiltrarTabla(event, 'Tabla_Body_Items')" class="form-control" id="Buscar_txt" placeholder="Buscar"></input>
+                </div>  
+                <div class="clearfix"></div>
+                <div id="panel_left_checks" >
+                        
+                        <input type="checkbox" id="Tab_items_Tipo_check" class="css-checkbox"></input>
+                                <label for="Tab_items_Tipo_check" class="css-label">Tipo </label>
+                                               
+                        <input type="checkbox"  id="Tab_items_Precio_check" class="css-checkbox"></input>
+                                <label for="Tab_items_Precio_check" class="css-label">Precio</label>
+                       
+                 
+                        <input type="checkbox"  id="checkboxG3" class="css-checkbox"></input>
+                                 <label for="checkboxG3" class="css-label">Option 3</label>   
+                        
+                </div>
+                
+        </div>
+        <div class="scroller" style="height: 750px; border: 1px solid var(--border-col); background: var(--bg-col-cl); ">    
+                <table class='table ' id='Tabla_General'>
+                                <thead >
+                                        <tr id='Tabla_Head_Items'>
+
+                                        </tr>
+                                </thead>     
+                        
+                                <tbody id='Tabla_Body_Items'>
+                                        
+                                </tbody>                                                                                                                     
+                        
+                </table>  
+        </div> 
+       
+        
+</div>
+        <div id="panel_right" class="container col-xs-10"></div>
+</div>

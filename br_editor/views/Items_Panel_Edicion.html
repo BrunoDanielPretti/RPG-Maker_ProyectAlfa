@@ -1,0 +1,206 @@
+<div >
+
+<div id="Items_Panel_De_Edicion" class="col-xs-4">
+    <div class="panel-heading" >  
+        <spam id="head_spam" >General:</spam>             
+                    
+        <spam id="head_spam_for_id" class="head-spam-for-id"> asd </spam>        
+    </div>
+
+    <div class="panel-body">
+        <form class="form" autocomplete="off">
+            <div class="form-group col-xs-6">
+                <label >Nombre:</label>                                                     
+                <input type="text" style="position: unset;" class="form-control" id="Nombre_txt" placeholder="" target='item_edit'></input>                                       
+            </div>
+
+        <spam class="form-group col-xs-3"></spam>
+        <div class="form-group col-xs-3">
+            <canvas id="Item_Icono" class="brCanvas" width="32" height="32" style="margin-top: 15px;"></canvas>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="form-group col-xs-4 ">
+            <label >Tipo de objeto:</label>
+            <select class="form-control" id="select_TipoDeObjeto" target='item_edit' data-toggle="tooltip" title="Selecciona q tipo de objeto va a ser">
+                <option value="1">Normal</option>  
+                <option value="2">Clave</option>
+                <option value="3">Oculto 1</option>
+                <option value="4">Oculto 2</option>
+            </select>
+        </div>
+
+        <div class="form-group col-xs-4">
+            <label >Precio:</label>
+            <input type="text" class="form-control" id="Precio_txt" placeholder="" onkeypress="return isNumberKey(event)" target='item_edit'></input> 
+        </div>
+
+        <div class="form-group col-xs-4 ">
+            <label >Consumible:</label>
+            <select class="form-control" id="select_Consumible" target='item_edit'>
+                <option value="True">True</option>  
+                <option value="False">False</option>                
+            </select>
+        </div>
+                        
+        <div class="clearfix"></div>
+
+        <div class="form-group col-xs-6" id="slc_Afecta">
+            <label >Afecta a:</label>
+            <select class="form-control" id="select_Scope" target='item_edit'>
+                <option value="0">Nada</option>  
+                <option value="1">1 enemigo</option>  
+                <option value="2">Todos los enemigos</option>
+                <option value="3">1 Enemigo Aleatorio</option>
+                <option value="4">2 Enemigo Aleatorio</option>
+                <option value="5">3 Enemigo Aleatorio</option>
+                <option value="6">4 Enemigo Aleatorio</option>
+                <option value="7">1 Aliado</option>
+                <option value="8">Todos los Aliados</option>
+                <option value="9">1 Aliado (Muerto)</option>
+                <option value="10">Todos los Aliados (Muertos)</option>
+                <option value="11">el Usuario</option>
+            </select>
+        </div>
+
+        <div class="form-group col-xs-6 ">
+            <label >Ocasion:</label>
+            <select class="form-control" id="select_Ocasion" target='item_edit'>
+                <option value="0">Siempre</option>  
+                <option value="1">Pantalla de Batalla</option>  
+                <option value="2">Pantalla de Menu</option>
+                <option value="3">Nunca</option>                
+            </select>
+        </div>
+
+        <div class="form-group col-xs-12">
+            <label >Descripcion:</label>
+            <textarea class="form-control" rows="2" id="Descripcion_txt" style="resize: none" target='item_edit'></textarea>
+        </div> 
+            
+                                                                            
+        </form>        
+        <div class="clearfix"></div>               
+    </div>        
+    <!-- <div class="panel-heading" >            
+        <spam id="head_spam">  Invocacion y Daño:  </spam>            
+        <spam id="head_spam2"></spam>
+    </div>             -->
+    <div class="panel-body ">
+        <div class="border-bottom"> <span>Invocacion:</span> </div>
+            
+        
+        <div class="form-group col-xs-3">
+            <label >Velocidad:</label>
+            <input type="text" class="form-control" id="Velocidad_txt" placeholder="" onkeypress="return isNumberKey(event)" target='item_edit'></input> 
+        </div>
+        <div class="form-group col-xs-3">
+            <label >Exito:</label>
+            <input type="text" class="form-control" id="Exito_txt" placeholder="" onkeypress="return isNumberKey(event)" target='item_edit'></input> 
+        </div>
+        <div class="form-group col-xs-3">
+            <label >Repeticion:</label>
+            <input type="text" class="form-control" id="Repeticion_txt" placeholder="" onkeypress="return isNumberKey(event)" target='item_edit'></input> 
+        </div>
+        <div class="form-group col-xs-3">
+            <label >TP:</label>
+            <input type="text" class="form-control" id="TP_txt" placeholder="" onkeypress="return isNumberKey(event)" target='item_edit'></input> 
+        </div>
+        
+        <div class="form-group col-xs-6 ">
+            <label >Tipo de Golpe:</label>
+            <select class="form-control" id="select_TipoDeGolpe" target='item_edit' >
+                <option value="0">Golpe certero</option>  
+                <option value="1">Ataque Fisico</option>  
+                <option value="2">Ataque Magico</option>                
+            </select>
+        </div>
+
+        <div class="form-group col-xs-6 ">
+            <label >Animacion:</label>
+            <button id="btn_animacion" class="btn brBtn col-xs-12" style="margin: -5px"> Disabled </button>
+        </div>        
+        
+        <div class="clearfix"></div>
+        
+        <div class="border-bottom"> <span>Daño:</span> </div>
+                    
+        <div class="form-group col-xs-6 ">
+            <label >Tipo daño:</label>
+            <select class="form-control" id="select_TipoDeDamage" target='item_edit' >
+                <option value="0">Nada</option>  
+                <option value="1">Daño de PV</option>  
+                <option value="2">Daño de PM</option>
+                <option value="3">Recuperacion de PV</option>
+                <option value="4">Recuperacion de PM</option>
+                <option value="5">Drenaje de PV</option>
+                <option value="6">Drenaje de PM</option>                
+            </select>
+        </div>
+        <div id="item_damage">
+            <div class="form-group col-xs-6 ">
+                <label >Elemento:</label>
+                <select class="form-control" id="select_Elemento" target='item_edit'>
+                                                       
+                </select>
+            </div>
+
+            <div class="form-group col-xs-12 tltp">  
+                <tltp id="tltp_FormulaDeDano"> </tltp>                              
+                <label >Formula de daño:</label>
+                <textarea class="form-control" rows="2" id="FormulaDamage_txt" style="resize: none" target='item_edit'></textarea>                
+            </div> 
+
+            <div class="form-group col-xs-4">
+                <label >Variacion:</label>
+                <input type="text" class="form-control" id="Variacion_txt" placeholder="" onkeypress="return isNumberKey(event)" target='item_edit'></input> 
+            </div>
+
+            <div class="form-group col-xs-4 ">
+                <label >Criticos:</label>
+                <select class="form-control" id="select_Criticos" target='item_edit'>
+                    <option value='True'>True</option>  
+                    <option value='False'>False</option>                
+                </select>
+            </div>        
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="border-bottom"></div>
+        
+            <button id="btn_guardar" class="btn brBtn btn-lg">
+                <span class="glyphicon glyphicon-floppy-disk"></span> Guardar
+            </button>            
+        
+            
+        <button id="btn_cargar_de_origin" class="btn brBtn btn-lg" style="float: right">
+            <span class="glyphicon glyphicon-import"></span> Importar
+        </button>
+        
+    </div>   
+
+    
+</div>
+
+<div class="col-xs-4">
+    Lalalalala
+</div>
+
+<div class="col-xs-4">
+    <div class="panel-heading" >            
+        <spam id="head_spam">  Notas:  </spam>            
+        <spam id="head_spam2"></spam>
+    </div>
+
+    <div class="panel-body">        
+        <div class="form-group col-xs-12">            
+            <textarea class="form-control textarea-notas" rows="25" id="Notas_txt" target='item_edit'></textarea>
+        </div>                                                                                                 
+        <div class="clearfix"></div>        
+    </div>
+</div>
+
+
+    
+
+</div>
