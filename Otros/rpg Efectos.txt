@@ -1,0 +1,21 @@
+Recuperar{
+	Recuperar PV 50% + 51  						Code 11 - dataId 0 - value1 0.5 - value2 51
+	Recuperar PM 60% + 61						Code 12 - dataId 0 - value1 0.6 - value2 61
+	Ganar PT 62									Code 13 - dataId 0 - value1 62 - value2 0
+}
+Estado{
+	Añadir Estado - 0001 Muerte 58%             Code 21 - dataId 1 - value1 0.58 - value2 0 
+	Remover Estado - 0010 Suerte 49%			Code 22 - dataId 10 - value1 0.49 - value2 0
+}
+Parametro{
+	Añadir Ventaja  PV Max.  5 Turnos 			Code 31 - dataId 0 - value1 5 - value2 0
+	Añadir Desventaja  Suerte 4 Turnos			Code 32 - dataId 7 - value1 4 - value2 0		
+	Quitar ventaja   PM Max.					Code 33 - dataId 1 - value1 1 - value2 0
+	Quitar desventaja Ataque					Code 34 - dataId 2 - value1 1 - value2 0
+}
+Otro{
+	Efecto especial  Huida						Code 41 - dataId 0 - value1 1 - value2 0
+	Aumentar PV Max +189 						Code 42 - dataId 0 - value1 189 - value2 0
+	Aprender habilidad  0009 Fuego				Code 43 - dataId 9 - value1 1 - value2 0
+	Evento comun 0002 Hacer de dia 				Code 44 - dataId 2 - value1 1 - value2 0
+}
