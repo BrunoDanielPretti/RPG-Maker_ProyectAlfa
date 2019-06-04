@@ -355,10 +355,17 @@ const pNexo = "http://localhost:3000/";
         }        
     }
 
-    function Decoder_EfectosDeUsables_ToString(pCode){
-        switch (pCode) {
-            case 11:    return "Recuperar PV"                
-            case 12:    return "Recuperar PM"                
+    function Decoder_EfectosDeUsables_ToString(pEfect){            
+        var res = {};
+        switch (pEfect.code) {
+            case 11:
+                res.tipo = "Recuperar HP";
+                res.data = pEfect.value1*100+"% + "+ pEfect.value2;
+                break;
+            case 12:    
+                res.tipo = "Recuperar MP";
+                res.data = pEfect.value1*100+"% + "+ pEfect.value2;
+                break;                          
             case 13:    return "Ganar PT"               
             case 21:    return "Añadir Estado"                 
             case 22:    return "Remover Estado"
@@ -373,8 +380,11 @@ const pNexo = "http://localhost:3000/";
             default:
                 console.log('Error en: Decoder_EfectosDeUsables_ToString('+pCode+')');
                 break;
-        }
+        }        
+        return res;
     }
+
+    
 //#endregion
 //#region --------------------------- PRUEBAS!!! -------------------------------
     function Prueba(){

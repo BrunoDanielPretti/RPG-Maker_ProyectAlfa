@@ -3,10 +3,10 @@
  {
   "id": 1,
   "animationId": 41,
-  "consumable": false,
+  "consumable": true,
   "damage": {
    "critical": false,
-   "elementId": -1,
+   "elementId": 8,
    "formula": "0",
    "type": 0,
    "variance": 30
@@ -20,7 +20,7 @@
     "value2": 500
    }
   ],
-  "hitType": 1,
+  "hitType": 0,
   "iconIndex": 0,
   "itypeId": 1,
   "name": "Poción de Vida",
@@ -45,7 +45,7 @@
   "consumable": true,
   "damage": {
    "critical": false,
-   "elementId": 0,
+   "elementId": 8,
    "formula": "0",
    "type": 0,
    "variance": 20

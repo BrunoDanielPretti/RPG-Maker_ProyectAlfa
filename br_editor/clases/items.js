@@ -161,22 +161,16 @@
             M_PanItems.TablaItems.SelecId = pId;
             $("[target=tr_item_"+pId+"]").addClass("tr-selected");
 
-            //-------------------- Efectos --------------//
-            //$("#Items_Panel_De_Efectos .panel-body").html("OLA Q ASE!!!");
-            miItem.effects.forEach(element => {
-                //$("#Items_Panel_De_Efectos .panel-body .zebra-list ").append("<li>"+ Decoder_EfectosDeUsables_ToString(element.code)+"</li>")
-                let tr = $("<tr></tr>");
-                //let tr = document.createElement("tr");                
-                tr.append("<td>"+ Decoder_EfectosDeUsables_ToString(element.code)+"</td>");
-                tr.append("<td>"+ element.dataId+"</td>");
-                tr.append("<td>"+ element.value1+"</td>");
-                tr.append("<td>"+ element.value2+"</td>");
-
-                $("#Items_Panel_De_Efectos tbody").append(tr);
+            //-------------------- Efectos --------------//        
+            miItem.effects.forEach(element => {                
+                let tr = $("<tr></tr>");            
+                var miEfecto = Decoder_EfectosDeUsables_ToString(element);                
+                tr.append("<td>"+ miEfecto.tipo +"</td>");
+                tr.append("<td>"+ miEfecto.data +"</td>");
                 
-                //$("#Items_Panel_De_Efectos tbody").append("</tr>")
+                $("#Items_Panel_De_Efectos tbody").append(tr);                               
             });
-            //$("#Items_Panel_De_Efectos .panel-body .zebra-list ").append("<li>+ Agregar Efecto +</li>")
+           
                 
             
 
